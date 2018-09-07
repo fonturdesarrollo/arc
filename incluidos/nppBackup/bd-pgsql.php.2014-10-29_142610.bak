@@ -1,0 +1,7 @@
+<?php
+	$conn = pg_connect("host=127.0.0.1 port=5432 dbname=nominas user=postgres password=123456");
+	if (!$conn) {
+	  echo "<p>Error conectando a bd-pg.</p>";
+	  exit;
+	}
+?>

@@ -1,0 +1,12 @@
+<?php
+	require("bd_pgsql.php");
+	if($_POST['ma']&&$_POST['tm']){
+		$ma=$_POST['ma'];
+		$tm=$_POST['tm'];
+		$resultado = pg_query($conexion, "SELECT numero_referencia FROM repuestos WHERE modelo_aplicacion LIKE '%$ma%' AND motor LIKE '%$tm%' ORDER BY descripcion ASC;");
+		while($row = pg_fetch_row($resultado)){
+			$data=$row[0];
+			echo '<option value="'.$data.'">'.$data.'</option>';
+		}
+	}
+?>
