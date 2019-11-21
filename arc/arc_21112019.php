@@ -759,13 +759,13 @@ $pdf->SetXY(10,70);
 $pdf->Cell(195,24,'',0,1,'C');
 $pdf->SetXY(10,100);
 $pdf->Cell(195,12,'',0,1,'C');
-$pdf->Image('../imagenes/FirmaDigitalCarnet.png',72,216,75,30,'PNG');
+$pdf->Image('../imagenes/FirmaDigitalCarnet.png',72,212,75,40,'PNG');
 $pdf->SetXY(10,235);
 $pdf->Cell(195,5,'______________________________',0,1,'C');
 $pdf->Cell(195,4,'Firma y Sello',0,1,'C');
 $pdf->Cell(195,4,utf8_decode('Agente de Retención'),0,1,'C');
-$pdf->Cell(195,4,utf8_decode('ROSELIN NEGRON'),0,1,'C');
-$pdf->Cell(195,4,'V- 12.260.911',0,1,'C');
+$pdf->Cell(195,4,utf8_decode('YENIRE ARIAS CABALLERO'),0,1,'C');
+$pdf->Cell(195,4,'V- 19.555.132',0,1,'C');
 
 ////////////////////////////////////
 // FIN PAGINA 1 COMIENZO PAGINA 2 //
@@ -847,13 +847,13 @@ $pdf->Cell(33,4,number_format($tottot,2,",","."),1,1,'R');
 
 $pdf->SetXY(10,100);
 $pdf->Cell(195,12,'',0,1,'C');
-$pdf->Image('../imagenes/FirmaDigitalCarnet.png',72,216,75,30,'PNG');
+$pdf->Image('../imagenes/FirmaDigitalCarnet.png',72,212,75,40,'PNG');
 $pdf->SetXY(10,235);
 $pdf->Cell(195,5,'______________________________',0,1,'C');
 $pdf->Cell(195,4,'Firma y Sello',0,1,'C');
 $pdf->Cell(195,4,utf8_decode('Agente de Retención'),0,1,'C');
-$pdf->Cell(195,4,utf8_decode('ROSELIN NEGRON'),0,1,'C');
-$pdf->Cell(195,4,'V- 12.260.911 ',0,1,'C');
+$pdf->Cell(195,4,utf8_decode('YENIRE ARIAS CABALLERO'),0,1,'C');
+$pdf->Cell(195,4,'V- 19.555.132',0,1,'C');
 
 $pdf->Output();
 ?>
